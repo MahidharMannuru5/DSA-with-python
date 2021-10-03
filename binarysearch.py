@@ -15,11 +15,11 @@ def binarySearch(arr, low, high, x):
 
 		# If x is greater, ignore left half
 		elif arr[mid] < x:
-			l = mid + 1
+			low = mid + 1
 
 		# If x is smaller, ignore right half
 		else:
-			r = mid - 1
+			high = mid - 1
 	
 	# If we reach here, then the element
 	# was not present
